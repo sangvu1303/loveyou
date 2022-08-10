@@ -98,14 +98,14 @@ iframe{
     #imgleft{
         width: 150px;
         height: 150px;
-        margin-left: 17px;
-        margin-right: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #imgright{
         width: 150px;
         height: 150px;
-        margin-right: 17px;
-        margin-left: 17px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .img {
         margin-top: 200px;
