@@ -1,0 +1,141 @@
+@keyframes heart{
+    50%{transform: translate(-50%,-150%) scale(2,2);}
+    100%{transform: translate(-95%,-30%) scale(1,1);}
+}
+body{
+    margin: 15 auto;
+    background:linear-gradient(to left, #f6ee66,#73f752 , #4eebed);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    color: fuchsia;
+}
+.heart{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    animation-name: heart;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.heart div{
+    background: red;
+    width: 70px;
+    height: 125px;
+    top: 50%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.left{
+    left: 45px;
+    transform: rotate(330deg);
+}
+
+.right{
+    right: 45px;
+    transform: rotate(30deg);
+}
+.image {
+    margin-left: 10px;
+}
+.img{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#imgleft{
+    background-image: url('./nam.jpg');
+    width: 640px;
+    height: 590px;
+    margin-right: 112px;
+    background-size: cover;
+}
+
+#imgright{
+    background-image: url(./nu.jpg);
+    width: 640px;
+    height: 590px;
+    margin-left: 107px;
+    background-size: cover;
+}
+
+.music{
+    margin-top: 20px;
+    font-size: 10px; 
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+}
+
+iframe{
+    width: 100%;
+    height: 110px;
+}
+
+@media (max-width: 739px) {
+    #imgleft{
+        width: 150px;
+        height: 150px;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+    #imgright{
+        width: 150px;
+        height: 150px;
+        margin-right: 17px;
+        margin-left: 17px;
+    }
+    .img {
+        margin-top: 200px;
+    }
+    .music {
+        margin-top: 150px;
+    }
+    .heart {
+        width: 2px;
+        height: 2px;
+        top: 25%;
+        left: 50%;
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+    @keyframes heart{
+        50%{transform: translate(-150%,-150%) scale(2,2);}
+        100%{transform: translate(-50%,-150%) scale(1,1);}
+    }
+    .left{
+        left: -15px;
+        transform: rotate(330deg);
+    }   
+    .right{
+        right: -10px;
+        transform: rotate(30deg);
+    }
+    .heart div{
+        width: 20px;
+        height: 30px;
+    }
+}
