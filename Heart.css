@@ -53,11 +53,9 @@ p{
     transform: rotate(30deg);
 }
 .image {
-    margin-left: 10px;
+    margin: 10px 10px auto;
 }
 .img{
-    width: auto;
-    height: auto;
     display: inline-block;
     margin-top: 10px;
 }
@@ -94,18 +92,14 @@ iframe{
     height: 110px;
 }
 
-@media (max-width: 739px) {
-    #imgleft{
-        width: 150px;
+@media screen and (max-width: 896px) {
+    #imgleft,#imgright{
+        width: 140px;
         height: 150px;
         margin-left: 10px;
         margin-right: 10px;
-    }
-    #imgright{
-        width: 150px;
-        height: 150px;
-        margin-right: 10px;
-        margin-left: 10px;
+        flex-shrink: 0;
+        object-fit: cover;
     }
     .img {
         margin-top: 200px;
