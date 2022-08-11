@@ -53,7 +53,7 @@ p{
     transform: rotate(30deg);
 }
 .image {
-    margin: 10px 10px auto;
+    margin: 0px auto;
 }
 .img{
     display: inline-block;
@@ -93,6 +93,9 @@ iframe{
 }
 
 @media screen and (max-width: 896px) {
+    .image {
+    margin: 10px 10px auto;
+    }
     #imgleft,#imgright{
         width: 140px;
         height: 150px;
